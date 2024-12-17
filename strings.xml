@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Camera App</string>
+    <string name="open_camera">Open Camera</string>
+    <string name="open_gallery">Open Gallery</string>
+    <string name="open_instagram">Open Instagram</string>
+    <string name="open_facebook">Open Facebook</string>
+    <string name="open_contact">Open Contact</string>
+    <string name="gallery">Gallery</string>
+    <string name="youtube_link">YouTube Link</string>
+    <string name="google_link">Google Link</string>
+    <string name="facebook_link">Facebook Link</string>
+    <string name="instagram_link">Instagram Link</string>
+    <string name="contact_app">Contact App</string>
+    <string name="message_app">Message App</string>
+</resources>
