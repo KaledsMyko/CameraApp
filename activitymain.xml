@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#261226"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Background Image -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back_ground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Camera Button -->
+    <ImageView
+        android:id="@+id/openCameraButton"
+        android:layout_width="230dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="180dp"
+        android:contentDescription="@string/open_camera"
+        android:onClick="openCamera"
+        android:src="@drawable/ic_camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Gallery Button -->
+    <ImageView
+        android:id="@+id/galleryButton"
+        android:layout_width="67dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="36dp"
+        android:contentDescription="@string/gallery"
+        android:onClick="openGallery"
+        android:src="@drawable/ic_gallery"
+        app:layout_constraintBottom_toTopOf="@+id/openCameraButton"
+        app:layout_constraintEnd_toStartOf="@+id/contactButton"
+        app:layout_constraintHorizontal_bias="0.362"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <!-- YouTube Button -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="63dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="21dp"
+        android:contentDescription="@string/youtube_link"
+        android:onClick="openYoutube"
+        android:src="@drawable/ic_youtube"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/galleryButton"
+        app:layout_constraintVertical_bias="0.964"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Google Button -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="64dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="40dp"
+        android:contentDescription="@string/google_link"
+        android:onClick="openGoogle"
+        android:src="@drawable/ic_google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView4" />
+
+    <!-- Facebook Button -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginBottom="44dp"
+        android:contentDescription="@string/facebook_link"
+        android:onClick="openFacebook"
+        android:src="@drawable/ic_facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        tools:ignore="VisualLintBounds" />
+
+    <!-- Message Button -->
+    <ImageView
+        android:id="@+id/messageButton"
+        android:layout_width="93dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="38dp"
+        android:contentDescription="Message app button"
+        android:onClick="openMessages"
+        android:src="@drawable/ic_message"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/openCameraButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toEndOf="@+id/contactButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck,VisualLintBounds" />
+
+    <!-- Contact Button -->
+    <ImageView
+        android:id="@+id/contactButton"
+        android:layout_width="74dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="24dp"
+        android:contentDescription="@string/contact_app"
+        android:onClick="openContacts"
+        android:src="@drawable/ic_contact"
+        app:layout_constraintBottom_toTopOf="@+id/openCameraButton"
+        app:layout_constraintEnd_toEndOf="@+id/openCameraButton"
+        app:layout_constraintStart_toStartOf="@+id/openCameraButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.145"
+        tools:ignore="ImageContrastCheck,MissingConstraints,UnknownId,VisualLintBounds,SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
